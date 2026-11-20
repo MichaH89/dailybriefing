@@ -1,0 +1,47 @@
+# Daily Briefing – Konfiguration
+
+timezone: Europe/Berlin
+# Zeitfenster: Stunde, ab der das Fenster am Vortag beginnt (montags ab Freitag)
+window_start_hour: 6
+
+mail:
+  # Testphase: nur an Michael. Später MD ergänzen.
+  # Versandweg: smtp (Zugangsdaten des Postfachs) oder gmail_api
+  method: smtp
+  test_mode: true
+  sender_name: "esome Daily Briefing"
+  # Absenderadresse. Bei TODO wird SMTP_USER aus der .env verwendet.
+  sender_email: "TODO@esome.com"
+  recipients_test:
+    - "michael.hinse@esome.com"
+  recipients_live:
+    - "TODO-MD@esome.com"
+  subject_prefix: "Daily Briefing"
+
+# Ergänzende Websuche: pro Eintrag eine Suche, nur Treffer im Zeitfenster
+watchlist:
+  ctv_tv:
+    - "Seven.One Joyn Werbung"
+    - "RTL Deutschland Ad Alliance"
+    - "Amazon Prime Video Werbung Deutschland"
+    - "Amazon DSP"
+    - "Netflix Werbeabo Deutschland"
+    - "Disney+ Werbung Deutschland"
+    - "Samsung Ads LG Ad Solutions Smart TV Werbung"
+  social:
+    - "Meta Werbung Änderung"
+    - "TikTok Ads Deutschland"
+    - "YouTube Ads Neuerung"
+    - "LinkedIn Ads"
+    - "Pinterest Ads"
+    - "Snapchat Ads"
+  agenturen_vertrieb:
+    - "OMD Germany"
+    - "Publicis Media Deutschland"
+    - "Mediaplus"
+    - "Havas Media Germany"
+    - "dentsu Deutschland"
+    - "Etat Mediaagentur Pitch"
+
+# Längenziel für das Briefing (ca. 5 Minuten Lesezeit)
+max_words: 1250

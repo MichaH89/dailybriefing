@@ -1,0 +1,56 @@
+# Quellen für das Daily Briefing
+# type: rss  → wird von scripts/fetch_feeds.py abgerufen (geprüft am 2026-11-20)
+# type: page → hat keinen funktionierenden Feed; der Agent öffnet die Seite täglich
+#              und übernimmt nur Meldungen mit belegtem Datum im Zeitfenster
+# topic: marketing | digital | ctv | social | finance | gruender | tech
+# paywall: true → oft nur Teaser verfügbar
+
+sources:
+  # --- DACH Marketing & Medien ---
+  - {name: HORIZONT, type: rss, url: "https://www.horizont.net/news/feed/", topic: marketing, lang: de, paywall: true}
+  - {name: W&V, type: rss, url: "https://www.wuv.de/feed/rss", topic: marketing, lang: de, paywall: true}
+  - {name: DWDL.de, type: rss, url: "https://www.dwdl.de/rss/allethemen.xml", topic: ctv, lang: de}
+  - {name: ADZINE, type: rss, url: "https://www.adzine.de/rss/", topic: digital, lang: de}
+  - {name: Ad Alliance, type: rss, url: "https://www.ad-alliance.de/feed", topic: ctv, lang: de}
+  - {name: OMR, type: rss, url: "https://omr.com/de/feed/", topic: digital, lang: de}
+  - {name: turi2, type: rss, url: "https://www.turi2.de/feed/", topic: marketing, lang: de}
+  - {name: onlinemarketing.de, type: rss, url: "https://onlinemarketing.de/feed", topic: digital, lang: de}
+  - {name: m&k (Werbewoche), type: rss, url: "https://www.markt-kom.com/de/feed/", topic: marketing, lang: de}
+  - {name: MEEDIA, type: page, url: "https://meedia.de/", topic: marketing, lang: de, paywall: true}
+  - {name: kress, type: page, url: "https://kress.de/news", topic: marketing, lang: de}
+  - {name: new business, type: page, url: "https://www.new-business.de/", topic: marketing, lang: de, paywall: true}
+  - {name: absatzwirtschaft, type: page, url: "https://www.absatzwirtschaft.de/", topic: marketing, lang: de, paywall: true}
+
+  # --- Digital, Tech, Finance, Gründer ---
+  - {name: t3n, type: rss, url: "https://t3n.de/rss.xml", topic: digital, lang: de}
+  - {name: Gründerszene, type: rss, url: "https://www.businessinsider.de/gruenderszene/feed/", topic: gruender, lang: de, paywall: true}
+  - {name: deutsche-startups.de, type: rss, url: "https://www.deutsche-startups.de/feed/", topic: gruender, lang: de}
+  - {name: Handelsblatt Technologie, type: rss, url: "https://www.handelsblatt.com/contentexport/feed/technologie", topic: finance, lang: de, paywall: true}
+  - {name: heise online, type: rss, url: "https://www.heise.de/rss/heise-atom.xml", topic: tech, lang: de}
+  - {name: TechCrunch, type: rss, url: "https://techcrunch.com/feed/", topic: gruender, lang: en}
+
+  # --- International Adtech & CTV ---
+  - {name: AdExchanger, type: rss, url: "https://www.adexchanger.com/feed/", topic: digital, lang: en}
+  - {name: Digiday, type: rss, url: "https://digiday.com/feed/", topic: digital, lang: en}
+  - {name: Adweek, type: rss, url: "https://www.adweek.com/feed/", topic: marketing, lang: en, paywall: true}
+  - {name: Marketing Brew, type: rss, url: "https://www.marketingbrew.com/feed", topic: marketing, lang: en}
+  - {name: TVREV, type: rss, url: "https://www.tvrev.com/news?format=rss", topic: ctv, lang: en}
+  - {name: Beet.TV, type: rss, url: "https://www.beet.tv/feed", topic: ctv, lang: en}
+  - {name: Cynopsis, type: rss, url: "https://www.cynopsis.com/feed/", topic: ctv, lang: en}
+  - {name: Variety Business, type: rss, url: "https://variety.com/v/biz/feed/", topic: ctv, lang: en}
+  - {name: Social Media Today, type: rss, url: "https://www.socialmediatoday.com/feeds/news/", topic: social, lang: en}
+  - {name: StreamTV Insider, type: page, url: "https://www.streamtvinsider.com/", topic: ctv, lang: en}
+  - {name: The Drum, type: page, url: "https://www.thedrum.com/news", topic: marketing, lang: en}
+
+  # --- Plattformen & Vermarkter (Primärquellen) ---
+  - {name: Meta Newsroom, type: rss, url: "https://about.fb.com/feed/", topic: social, lang: en}
+  - {name: YouTube Official Blog, type: rss, url: "https://blog.youtube/rss/", topic: social, lang: en}
+  - {name: Google Ads & Commerce Blog, type: rss, url: "https://blog.google/products/ads-commerce/rss/", topic: digital, lang: en}
+  - {name: About Amazon, type: rss, url: "https://www.aboutamazon.com/news/feed", topic: ctv, lang: en}
+  - {name: Snap Newsroom, type: rss, url: "https://newsroom.snap.com/feed", topic: social, lang: en}
+  - {name: Netflix Newsroom, type: rss, url: "https://about.netflix.com/en/feed.xml", topic: ctv, lang: en}
+  - {name: TikTok Newsroom, type: page, url: "https://newsroom.tiktok.com/de-de", topic: social, lang: de}
+  - {name: LinkedIn News, type: page, url: "https://news.linkedin.com/", topic: social, lang: en}
+  - {name: Pinterest Newsroom, type: page, url: "https://newsroom.pinterest.com/", topic: social, lang: en}
+  - {name: Seven.One Media, type: page, url: "https://www.seven.one/", topic: ctv, lang: de}
+  - {name: Amazon Ads News, type: page, url: "https://advertising.amazon.com/library/news", topic: ctv, lang: en}
